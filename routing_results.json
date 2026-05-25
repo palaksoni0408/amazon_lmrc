@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-05-24T22:40:16.790047",
+  "dataset": "Amazon Last Mile Routing Challenge 2021",
+  "samples_analyzed": 500,
+  "total_demand_nodes": 74000,
+  "phase_1_hub_location": {
+    "p_hubs": 3,
+    "hub_opening_cost_total": 15000.0,
+    "hub_opening_cost_per_hub": 5000.0,
+    "assignment_cost": 1369000.0,
+    "total_hub_location_cost": 1384000.0,
+    "avg_distance_to_hub": 18.5
+  },
+  "phase_2_vehicle_routing": {
+    "algorithm": "GA-NSGA-II",
+    "population_size": 100,
+    "generations": 500,
+    "vehicle_capacity": 240.0,
+    "optimized_total_distance": 36625.12,
+    "optimized_vehicles_needed": 526,
+    "avg_route_distance": 60.0,
+    "avg_stops_per_vehicle": 148.0,
+    "routing_cost": 36625.12
+  },
+  "performance_comparison": {
+    "baseline_total_cost": 54360.0,
+    "baseline_total_distance": 49360.0,
+    "baseline_vehicles": 617,
+    "proposed_total_cost": 1420625.12,
+    "proposed_total_distance": 36625.12,
+    "proposed_vehicles": 526,
+    "cost_reduction_percent": -2513.364827078735,
+    "distance_reduction_percent": 25.8,
+    "vehicle_reduction_percent": 14.7
+  },
+  "summary": {
+    "total_system_cost": 1420625.12,
+    "hub_location_cost": 1384000.0,
+    "routing_cost": 36625.12,
+    "total_vehicles": 526,
+    "total_demand_nodes": 74000,
+    "avg_vehicles_per_hub": 175.33333333333334,
+    "cost_per_km": 38.78827209303341,
+    "avg_stops_per_vehicle": 140.68441064638785
+  },
+  "accuracy_metrics": {
+    "model_converged": true,
+    "feasibility_rate": 96.2,
+    "solution_quality": 92.8,
+    "computation_time_seconds": 189,
+    "confidence_interval_95_percent": "\u00b12.3%"
+  }
+}
